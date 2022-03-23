@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Syed Asif Imam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="toggle" onclick="toggleMenu();">
+
+    </div>
+
+
+
+    <section class="banner" id="home">
+
+        <div class="imgbx">
+            <img src="img/me.jpg" alt="asif">
+        </div>
+
+        <div class="content">
+            <h5 class="logo">Syed Asif Imam</h5>
+            <div class="intro">
+                <h2>Welcome to my Portfolio</h2>
+                <h3>Myself <span> Syed Asif Imam</span></h3>
+                <a href="#about" class="btn">More Detail</a>
+            </div>
+        </div>
+
+        <div class="socialbx">
+            <a href="https://www.facebook.com/Syedasif0786"> <i class="fa fa-2x fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/syed-asif-imam"><i class="fa fa-2x fa-linkedin-square"></i></a>
+            <a href="https://github.com/syedasif1994"><i class="fa fa-2x fa-github-square"></i></a>
+            <a href="https://www.instagram.com/syed_asif_imam7/"><i class="fa fa-2x fa-instagram"></i></a>
+        </div>
+
+        <nav class="menu">
+            <ul class="navbar">
+                <li class="homeNav" onclick="homeMenu();"><a href="#home">HOME</a></li>
+                <li class="aboutNav" onclick="aboutMenu();"><a href="#about">ABOUT</a></li>
+                <li class="eductionNav" onclick="eductionMenu();"><a href="#education">Eduaction</a></li>
+                <li class="skillNav" onclick="skillMenu();"><a href="#skill">Skill</a></li>
+                <li class="contactNav" onclick="contactMenu();"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <h1 class="SectionTitle">A<span>bout me</span></h1>
+    </section>
+
+    <section class="education" id="education">
+        <h1 class="SectionTitle">E<span>ducation</span></h1>
+    </section>
+
+    <section class="skill" id="skill">
+        <h1 class="SectionTitle">S<span>kill</span></h1>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="SectionTitle">C<span>ontact</span></h1>
+    </section>
+
+
+    <footer class="footer">
+        Copyright Portfolio &copy; SYED ASIF IMAM 2022,All right reserved.
+        <a href="#home"><img src="/img/top.png" alt=""></a>
+    </footer>
+
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector(".toggle");
+            menuToggle.classList.toggle('acitve')
+            const menu = document.querySelector(".menu")
+            menu.classList.toggle('acitve')
+
+        }
+
+        function homeMenu() {
+            const homemenu = document.querySelector(".homeNav");
+            homemenu.classList.toggle('active')
+        }
+        function aboutMenu() {
+            const aboutmenu = document.querySelector(".aboutNav");
+            aboutmenu.classList.toggle('active')
+        }
+        function educationMenu() {
+            const educationmenu = document.querySelector(".educationNav");
+            educationmenu.classList.toggle('active')
+        }
+        function skillMenu() {
+            const skillmenu = document.querySelector(".skillNav");
+            skillmenu.classList.toggle('active')
+        }
+        function contactMenu() {
+            const contactmenu = document.querySelector(".contactNav");
+            contactmenu.classList.toggle('active')
+
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/ab86103de8.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

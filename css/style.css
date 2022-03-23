@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Sans:wght@100;400&family=Lobster&family=Oswald:wght@600&family=Poppins:wght@200&family=Roboto+Slab:wght@600&family=Source+Code+Pro:ital,wght@1,300&family=Vujahday+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.SectionTitle{
+color: red;
+font-family: 'Oswald', sans-serif;
+font-size: 4em;
+text-align: center;
+margin-top: 30px;
+}
+
+.SectionTitle span{
+color: black;
+font-size: 40px;
+}
+
+/* ----------- Menu ------------------ */
+
+.toggle{
+    position: fixed;
+    top:10px;
+    right: 20px;
+    width:50px;
+    height: 50px;
+    background:rgba(255,255,255,0.6) url("../img/menu1.png") no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.toggle.acitve{
+    background:rgba(255,255,255,0.6) url("../img/cancel.png") no-repeat center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.menu{
+    position: fixed;
+    top: 10px;
+    right: -100%;
+    width: 60%;
+    height: 90%;
+    color: white;
+background:url("../img/menubg.jpg")no-repeat;
+background-size:cover ;
+display: flex;
+justify-content: center;
+align-items: center;
+transform: 0.5s;
+padding: 50px;
+border-bottom-left-radius: 100px;
+border-top-left-radius: 100px;
+
+
+}
+
+.menu.acitve{
+    right:0;
+}
+
+.menu .navbar{
+list-style: none;
+}
+
+.menu .navbar li {
+    margin: 30px;
+}
+
+.menu .navbar li a{
+    text-align: center;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-size: 2em;
+color: white;
+}
+
+.menu .navbar li a:hover{
+    text-decoration: line-through;
+    color: yellow;
+}
+
+/* ----------- HOME ------------------ */
+
+.banner{
+    position: relative;
+    width: 100%;
+    display: flex;
+align-items: center;
+
+box-shadow: 10px 0 20px rgba(0,0,0,0.9);
+}
+
+
+.imgbx{
+    position: relative;
+    width: 40%;
+    height: 100vh;
+}
+
+.imgbx img{
+    position:absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+    
+}
+
+.content{
+position: absoulate;  
+    width: 60%;
+    height: 100vh;
+    color: black;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+background: url("../img/bg.jpg")no-repeat fixed;
+background-size: cover;
+}
+
+
+.content img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.content .logo{
+    position: absolute;
+    padding: 10px;
+    top: 4%;
+    left: 45%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    color: white;
+    background-color: rgba(9, 115, 202, 0.2);
+}
+
+.intro h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    color: yellow;
+    font-size: 2.5em;
+}
+
+.intro h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    color: blueviolet;
+    font-size: 2em;
+}
+
+.intro h3 span{
+    color:white;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+
+.intro .btn{
+    color: white;
+    background-color: brown;
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10%;
+    border: 2px solid black;
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.5),
+                2px 2px 5px rgba(0,0,0,0.5);
+transition: 0.5s;
+}
+
+.intro .btn:hover{
+    background-color: white;
+    color: black;
+    transform:translatex(20px);
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.5),
+                      2px 24px 10px rgba(0,0,0,0.5);
+}
+
+
+.socialbx{
+    position:absolute;
+    bottom: 8%;
+    left: 45%;
+    display: flex;
+}
+
+.socialbx a{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+    border-radius: 50%;
+    color: black;
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.5),
+                      2px 2px 5px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+.socialbx a:hover{
+    color: red;
+    transform: translateY(-20px);
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.5),
+                      2px 24px 10px rgba(0,0,0,0.5);
+}
+
+.socialbx a:before{
+position:absolute;
+content:'';
+top:5px;
+left:5px;
+right:5px;
+bottom:5px;
+border-radius: 50%;
+border: 2px solid rgba(0,0,0,0.8);
+}
+
+/* ----------- About ----------------- */
+
+.about{
+width: 100%;
+   height: 50vh;
+}
+
+/* ----------- education -------------- */
+
+.education{
+    width: 100%;
+    height: 50vh;
+ }
+
+/* ----------- skill --------------- */
+
+.skill{
+    width: 100%;
+    height: 50vh;
+ }
+
+/* ----------- Contact --------------- */
+
+
+.contact{
+    width: 100%;
+    height: 50vh;
+ }
+
+/* ----------- footer ---------------- */
+
+
+.footer{
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.footer img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: 10%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3%;
+    cursor: pointer;
+    height: 5vh;
+    background-color: aqua;
+}
+
+/* ----------- Responsive ------------ */
