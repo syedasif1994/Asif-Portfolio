@@ -244,8 +244,9 @@ border: 2px solid white;
 /* ----------- About ----------------- */
 
 .about{
+    padding: 20px;
 width: 100%;
-   height: 50vh;
+height: 50vh;
 }
 
 /* ----------- education -------------- */
@@ -323,8 +324,8 @@ width: 100%;
     .content .logo{
         position: absolute;
         padding: 10px;
-        top: 8%;
-        left: 5%;
+        top: 10%;
+        left: 8%;
         font-size: 2em;
     }
 
@@ -335,7 +336,7 @@ width: 100%;
         .banner{
         position:relative;
         width: 100%;
-        height: 60vh;
+        height: 70vh;
         }
 
         .intro h2{
@@ -373,11 +374,17 @@ width: 100%;
                 font-size: 10px;
             }
             
+
+            .about{
+            margin-top: 70px;
+        
+            }
+
     .SectionTitle{
         color: red;
         font-family: 'Oswald', sans-serif;
         font-size: 3em;
-        padding: 10px;
+  margin-left: 2%;
         }
         
         .SectionTitle span{
