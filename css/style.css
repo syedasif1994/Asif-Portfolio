@@ -195,7 +195,7 @@ transition: 0.5s;
 
 .socialbx{
     position:absolute;
-    bottom: 8%;
+    bottom: 10%;
     left: 45%;
     display: flex;
 }
@@ -279,24 +279,8 @@ width: 100%;
     height: 8vh;
     display: flex;
     padding: 20px;
-    align-items: center;
-}
-
-
-.footer img{
-    display: flex;
     justify-content: center;
     align-items: center;
-    position:absolute;
-    bottom: 10%;
-    right: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3%;
-    cursor: pointer;
-    height: 5vh;
-    background-color: aqua;
 }
 
 /* ----------- Responsive ------------ */
