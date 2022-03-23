@@ -187,6 +187,8 @@ background-size: cover;
 transition: 0.5s;
 }
 
+
+
 .intro .btn:hover{
     background-color: white;
     color: black;
@@ -295,7 +297,7 @@ width: 100%;
         }
 }
 
-@media (min-width:350px) and (max-width:600px) {
+@media (min-width:400px) and (max-width:700px) {
   
     .toggle{
         top:8px;
@@ -307,7 +309,7 @@ width: 100%;
     .menu{
         top: 8px;
         width: 90vw;
-        height: 60%;
+        height: 70%;
     }
 
     .menu .navbar li {
@@ -333,15 +335,19 @@ width: 100%;
         .banner{
         position:relative;
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         }
 
         .intro h2{
-            font-size: 2em;
+            font-size: 1.9em;
         }
 
         .intro h3{
-            font-size: 1em;
+            font-size: 1.5em;
+        }
+
+        .intro h3 span{
+            font-size: 2em;
         }
 
         .content{
@@ -350,9 +356,14 @@ width: 100%;
             object-fit: cover;
             }
 
+            .intro .btn{
+                position:absolute;
+                left: 30%;
+            }
+
             .socialbx{
                 bottom: 2%;
-                left: 10%;
+                left: 20%;
             }
              
             .socialbx a{
@@ -385,7 +396,7 @@ width: 100%;
 }
 
 
-@media (min-width:801px) and (max-width:990px) {
+@media (min-width:701px) and (max-width:990px) {
   
 
 }
