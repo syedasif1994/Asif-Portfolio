@@ -63,6 +63,7 @@ border-top-left-radius: 100px;
 }
 
 
+
 .menu.acitve{
     right:0;
 }
@@ -418,14 +419,15 @@ object-fit: cover;
     .toggle{
         top:8px;
         right: 10px;
-        width:30px;
+        width:35px;
         height: 30px;
     }
     
     .menu{
         top: 8px;
         width: 90vw;
-        height: 80%;
+        height: 90vh;
+        background: rgba(0,0,0,0.97);
     }
 
     .menu .navbar li {
@@ -495,22 +497,28 @@ object-fit: cover;
 .wrapper{
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
 }
 
 .card{
     margin-top: 40px;
-    width: 95%;
+    width: 90%;
     height: 100%;
+    margin-left: 20px;
 }
 
+.info h1{
+    font-size: 1em;
+}
+
+.info h3{
+    font-size: 0.7em;
+}
 
 /* ------------------------------------------------------------- */
 
 .skill{
     margin-top: 50px;
 }
-
 
 /* ------------------------------------------------------------- */
     .footer{
