@@ -41,11 +41,11 @@
 
         <nav class="menu">
             <ul class="navbar">
-                <li class="homeNav" onclick="homeMenu();"><a href="#home">HOME</a></li>
-                <li class="aboutNav" onclick="aboutMenu();"><a href="#about">ABOUT</a></li>
-                <li class="eductionNav" onclick="eductionMenu();"><a href="#education">Eduaction</a></li>
-                <li class="skillNav" onclick="skillMenu();"><a href="#skill">Skill</a></li>
-                <li class="contactNav" onclick="contactMenu();"><a href="#contact">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">Eduaction</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </section>
@@ -68,7 +68,7 @@
                     <h5>YEAR: 2015-2019</h5>
                 </div>
             </div>
-    
+
             <div class="card">
                 <img src="img/edu/kpc.jpg" alt="">
                 <div class="info">
@@ -83,10 +83,75 @@
 
     <section class="skill" id="skill">
         <h1 class="SectionTitle">S<span>kill</span></h1>
+
+        <div class="lg">
+            <i class="fa fa-cog ">
+                <h2>PROGRAMMING LANGUAGE:</h2>
+            </i>
+            <div class="lgcd">
+                <div class=""><img src="/img/skill/html.png"></div>
+                <div class=""><img src="/img/skill/css3.png"></div>
+                <div class=""><img src="/img/skill/js.png"></div>
+                <div class=""><img src="/img/skill/c.png"></div>
+                <div class=""><img src="/img/skill/net.png"></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="library">
+
+            <i class="fa fa-cog ">
+                <h2>LIBRARIES & FRAMEWORKS:</h2>
+            </i>
+
+            <div class="lgcd">
+                <div class=""><img src="/img/skill/nodejs.webp"></div>
+                <div class=""><img src="/img/skill/b.png"></div>
+                <div class=""><img src="/img/skill/react.png"></div>
+                <div class=""><img src="/img/skill/express.png"></div>
+                <div class=""><img src="/img/skill/hbs.png"></div>
+                <div class=""><img src="/img/skill/jq.png"></div>
+                <div class=""><img src="/img/skill/wordpress.png"></div>
+            </div>
+
+        </div>
+
+
+
+        <div class="database">
+            <i class="fa fa-cog ">
+                <h2>DATABASE & VERSION CONTROL:</h2>
+            </i>
+
+            <div class="lgcd">
+                <div class="Pghtml"><img src="/img/skill/mongo.png"></div>
+                <div class="Pgcss"><img src="/img/skill/git.png"></div>
+            </div>
+
+
+        </div>
+        <div class="extra">
+            <i class="fa fa-cog ">
+                <h2>EXTRA SKILL:</h2>
+            </i>
+
+            <div class="lgcd">
+                <div class="Pghtml"><img src="/img/skill/excel.png"></div>
+                <div class="Pghtml"><img src="/img/skill/word.png"></div>
+                <div class="Pghtml"><img src="/img/skill/Microsoft-PowerPoint-Logo.png"></div>
+                <div class="Pghtml"><img src="/img/skill/micro.png"></div>
+            </div>
+
+
+        </div>
     </section>
 
+
+
     <section class="contact" id="contact">
-        <h1 class="SectionTitle">C<span>ontact</span></h1>
+        <h1 class="SectionTitle ContactTitle">C<span>ontact</span></h1>
     </section>
 
 
@@ -105,27 +170,8 @@
 
         }
 
-        function homeMenu() {
-            const homemenu = document.querySelector(".homeNav");
-            homemenu.classList.toggle('active')
-        }
-        function aboutMenu() {
-            const aboutmenu = document.querySelector(".aboutNav");
-            aboutmenu.classList.toggle('active')
-        }
-        function educationMenu() {
-            const educationmenu = document.querySelector(".educationNav");
-            educationmenu.classList.toggle('active')
-        }
-        function skillMenu() {
-            const skillmenu = document.querySelector(".skillNav");
-            skillmenu.classList.toggle('active')
-        }
-        function contactMenu() {
-            const contactmenu = document.querySelector(".contactNav");
-            contactmenu.classList.toggle('active')
 
-        }
+
     </script>
     <script src="https://kit.fontawesome.com/ab86103de8.js" crossorigin="anonymous"></script>
 
