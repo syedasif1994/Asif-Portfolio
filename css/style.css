@@ -506,8 +506,6 @@ section {
     }
 
     .SectionTitle {
-        color: red;
-        font-family: 'Oswald', sans-serif;
         font-size: 2.5em;
         padding: 20px;
     }
@@ -684,45 +682,47 @@ section {
         font-size: 1.2em;
     }
     
-    /* ----------- skill --------------- */
+    /* ----------- Project --------------- */
     
     .project {
-        width: 100%;
-        padding: 20px;
+        padding: 10px;
     }
     
     .project_container {
-        width: 100%;
-        padding: 20px;
-        height: fit-content;
-        background-color: rgba(196, 44, 44, 0.4);
+        padding: 10px;
     }
     
     .project_body {
-        width: 80%;
+        width: 100%;
         margin-bottom: 20px;
        
     }
     
     .project_body h2 {
-        margin-left: 20px;
-        text-decoration: underline;
+        font-size: 1em;
+        margin-left: 5px;
     }
     
     .project_link{
-        margin-left: 50px;
+        margin-left:20px;
     }
     
     .project_link a{
-        text-decoration: none;
+        font-size: 0.7em;
     }
     
     .project_bodybox {
         width: 100%;
-        padding: 10px;
+        padding: 5px;
     }
     
+    .project_bodybox h4{
+        font-size: 0.8em;
+    }
     
+    .project_bodybox p{
+        font-size: 0.8em;
+    }
     
     
     /* ----------- Contact --------------- */
@@ -739,20 +739,10 @@ section {
     /* ----------- footer ---------------- */
     
     .footer {
-        position: relative;
-        font-family: 'Roboto Slab', serif;
-        font-size: 1em;
-        background-color: black;
-        color: white;
-        font-weight: bolder;
-        width: 100%;
-        height: 8vh;
-        display: flex;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
+        font-size: 0.7em;
     }
 }
+
 
 
 @media (min-width:481px) and (max-width:769px) {
@@ -761,33 +751,30 @@ section {
         display: none;
     }
 
-
     .SectionTitle {
-        color: red;
-        font-family: 'Oswald', sans-serif;
-        font-size: 2.5em;
-        padding: 10px;
+        font-size: 3em;
+        padding: 25px;
     }
 
     .SectionTitle span {
         color: black;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     /*---------------------------------------------------------  */
 
     .toggle {
-        top: 8px;
-        right: 10px;
+        top: 10px;
+        right: 15px;
         width: 35px;
         height: 30px;
     }
 
     .menu {
         top: 8px;
-        width: 90vw;
-        height: 90vh;
-        background: rgba(0, 0, 0, 0.97);
+        width: 80vw;
+        height: 80vh;
+        background: rgba(0, 0, 0, 0.95);
     }
 
     .menu .navbar li {
@@ -795,25 +782,24 @@ section {
     }
 
     .menu .navbar li a {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     .content .logo {
-        position: absolute;
         padding: 10px;
         top: 10%;
-        left: 8%;
+        left: 10%;
         font-size: 2em;
     }
 
     .banner {
         position: relative;
         width: 100%;
-        height: 70vh;
+        height: 80vh;
     }
 
     .intro h2 {
-        font-size: 1.9em;
+        font-size: 1.7em;
     }
 
     .intro h3 {
@@ -826,8 +812,7 @@ section {
 
     .content {
         width: 100%;
-        height: 80vh;
-        object-fit: cover;
+        height: 90vh;
     }
 
     .intro .btn {
@@ -847,19 +832,31 @@ section {
         font-size: 10px;
     }
 
-    /* ------------------------------------------------------------- */
+        
+    /* ----------- About Us -------------- */
 
-    .about {
-        margin-top: 50px;
+    
+    
+    .about_container p{
+        width: 90%;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
-
-    /* ------------------------------------------------------------- */
-
+    
+    
+    /* ----------- education -------------- */
+    
+ 
     .wrapper {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 60vh;
     }
-
+    
     .card {
         margin-top: 40px;
         width: 90%;
@@ -867,6 +864,24 @@ section {
         margin-left: 20px;
     }
 
+    
+    .card img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+    .card .info {
+        position: relative;
+        z-index: 3;
+        transition: 0.5 all;
+        opacity: 0;
+    }
+    
     .info h1 {
         font-size: 1em;
     }
@@ -874,20 +889,100 @@ section {
     .info h3 {
         font-size: 0.7em;
     }
+    
+    /* ----------- skill --------------- */
+    
 
-    /* ------------------------------------------------------------- */
-
-
-
-
-    /* ------------------------------------------------------------- */
-    .footer {
+    .container_body h2 {
+        margin-left: 20px;
+        font-size: 1.4em;
+    }
+    
+    .bodybox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        height: 7vh;
-        padding: 3px;
+        padding: 5px;
+    }
+    
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 20vh;
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+    
+    .box:hover {
+        font-size: 1.2em;
+    }
+    
+    /* ----------- Project --------------- */
+    
+    .project {
+        padding: 10px;
+    }
+    
+    .project_container {
+        padding: 10px;
+    }
+    
+    .project_body {
+        width: 100%;
+        margin-bottom: 20px;
+       
+    }
+    
+    .project_body h2 {
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
+    
+    .project_link{
+        margin-left:20px;
+    }
+    
+    .project_link a{
+        font-size: 0.9em;
+    }
+    
+    .project_bodybox {
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .project_bodybox h4{
+        font-size: 1em;
+    }
+    
+    .project_bodybox p{
+        font-size: 1em;
+    }
+    
+    
+    /* ----------- Contact --------------- */
+    
+    
+    #contact {
+        margin-top: 20px;
+        width: 100%;
+       height: 50vh;
+        background: rgba(112, 102, 8, 0.6);
+    }
+    
+    
+    /* ----------- footer ---------------- */
+    
+    .footer {
         font-size: 0.7em;
     }
 }
+
+
 
 
 @media (min-width:770px) and (max-width:1200){
